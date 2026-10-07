@@ -1,0 +1,51 @@
+<! -- 
+Create an HTML form for registering youth soccer players with validation.
+
+Your form should include the following fields:
+
+First Name (required)
+Last Name (required)
+Age (required, must be between 8-16)
+Parent/Guardian Email (required, valid email format)
+Mobile Phone Number (required)
+T-Shirt Size (dropdown: XS, S, M, L, XL)
+Previous Soccer Experience (radio buttons: None, 1-2 Years, 3+ Years)
+
+Validation requirements
+
+All required fields must be completed
+Age must be between 8-16
+Email must be in valid format
+Mobile Phone Number must be in xxxx xxx xxxx format
+Display error messages for invalid fields
+-- >
+
+First Name <br>
+    <input type="text" name="firstname" required> <br><br>
+
+Last Name <br>
+    <input type="text" name="lastname" required> <br><br>
+
+Age <br>
+    <input type="number" name="age" min="8" max="16" required> <br><br>
+
+Parent/Guardian Email <br>
+    <input type="email" name="email" required> <br><br>
+
+Mobile Phone Number <br>
+    <input type="tel" name="phone" required> <br><br>
+
+<label for="size">T-Shirt Size:</label>
+    <select name="size" id="size">
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+    </select>
+
+Previous Soccer Experience <br>
+    <input type="radio" name="experience" value="none" checked> none
+     <input type="radio" name="experience" value="none" checked> none
+      <input type="radio" name="experience" value="none" checked> none
+      
